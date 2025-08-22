@@ -7,5 +7,11 @@ enum Secrets {
     static let cloudinaryCloudName = "derhnhko0"
     static let cloudinaryApiKey = "766535777996872"
     static let cloudinaryApiSecret = "2mLl4-90XqAUs0r1irajzbQw6s"
-    static let cloudinaryUploadPreset = "crop_images"
+    // Default upload preset used across the app. Ensure this exists in Cloudinary and
+    // is enabled for unsigned uploads. Change as needed.
+    static let cloudinaryUploadPreset = "post_images"
+
+    // SECURITY NOTE: Do NOT commit cloudinaryApiSecret into a public client app.
+    // If you need signed uploads, perform signing server-side and do not store
+    // the API secret in the app repository.
 }
