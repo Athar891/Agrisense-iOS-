@@ -10,6 +10,8 @@ enum Secrets {
     // Default upload preset used across the app. Ensure this exists in Cloudinary and
     // is enabled for unsigned uploads. Change as needed.
     static let cloudinaryUploadPreset = "post_images"
+    // Product images upload preset - for marketplace product images
+    static let cloudinaryProductImagesPreset = "product_images"
 
     // SECURITY NOTE: Do NOT commit cloudinaryApiSecret into a public client app.
     // If you need signed uploads, perform signing server-side and do not store
